@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    console.log("PRINT PRIMENUM USING ANONYMOUS");
+    var a=[2,3,4,5,6,8,7,11];
+    var i;
+    var b=[];
+     var isPrime=function() {
+         for (i = 0; i < a.length; i++) { 
+           if (a[i] === 2 || a[i] % 2 !== 0) {
+              b.push(a[i]); 
+            }
+          } return b; 
+}
+isPrime(); 
+console.log(b); 
+
+    console.log("PRINT PRIMENUM USING IIFE");
+    var a=[13,2,4,5,6,3,7,11];
+    var i;
+    var b=[];
+     function isPrime() {
+         for (i = 0; i < a.length; i++) { 
+           if (a[i] === 2 || a[i] % 2 !== 0) {
+              b.push(a[i]); 
+            }
+          } return b; 
+}
+isPrime(); 
+console.log(b); 
+
+    
+    </script>
+</body>
+</html>
